@@ -2,7 +2,9 @@
   "@context": [
     "https://w3id.org/ro/crate/1.1/context",
     {
-      "@vocab": "http://schema.org/"
+      "@vocab": "http://schema.org/",
+      "Geometry": "http://www.opengis.net/ont/geosparql#Geometry",
+      "asWKT": "http://www.opengis.net/ont/geosparql#asWKT"
     }
   ],
   "@graph": [
@@ -19,15 +21,90 @@
       ],
       "name": [
         "test"
+      ],
+      "hasPart": [
+        {
+          "@id": "data/inflammation-02.csv"
+        },
+        {
+          "@id": "data/inflammation-03.csv"
+        },
+        {
+          "@id": "data/inflammation-06.csv"
+        },
+        {
+          "@id": "data/inflammation-04.csv"
+        },
+        {
+          "@id": "data/inflammation-01.csv"
+        },
+        {
+          "@id": "data/inflammation-09.csv"
+        },
+        {
+          "@id": "data/inflammation-07.csv"
+        },
+        {
+          "@id": "data/inflammation-08.csv"
+        },
+        {
+          "@id": "data/inflammation-11.csv"
+        },
+        {
+          "@id": "data/python-novice-inflammation-data.zip"
+        },
+        {
+          "@id": "data/inflammation-12.csv"
+        },
+        {
+          "@id": "data/small-03.csv"
+        },
+        {
+          "@id": "data/inflammation-10.csv"
+        },
+        {
+          "@id": "data/inflammation-05.csv"
+        },
+        {
+          "@id": "data/small-01.csv"
+        },
+        {
+          "@id": "data/small-02.csv"
+        },
+        {
+          "@id": "inflammation/models.py"
+        },
+        {
+          "@id": "inflammation/views.py"
+        },
+        {
+          "@id": "inflammation/__init__.py"
+        },
+        {
+          "@id": "tests/test_models.py"
+        },
+        {
+          "@id": "tests/test_patient.py"
+        },
+        {
+          "@id": "inflammation-analysis.py"
+        },
+        {
+          "@id": "pyproject.toml"
+        },
+        {
+          "@id": "LICENCE.md"
+        },
+        {
+          "@id": "README.md"
+        },
+        {
+          "@id": "ro-crate-preview.html"
+        },
+        {
+          "@id": "Untitled.ipynb"
+        }
       ]
-    },
-    {
-      "@id": "ro-crate-metadata.json",
-      "@type": "CreativeWork",
-      "identifier": "ro-crate-metadata.json",
-      "about": {
-        "@id": "./"
-      }
     },
     {
       "@id": "#Aleksandra_Nenadic-1",
@@ -38,6 +115,177 @@
       "@id": "#Steve_Crouch-1",
       "@type": "Person",
       "name": "Steve_Crouch-1"
+    },
+    {
+      "@id": "ro-crate-metadata.json",
+      "@type": "CreativeWork",
+      "identifier": "ro-crate-metadata.json",
+      "about": {
+        "@id": "./"
+      }
+    },
+    {
+      "@id": "data/inflammation-02.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "data/inflammation-03.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "data/inflammation-06.csv",
+      "@type": "File",
+      "contentLocation": [
+        {
+          "@id": "#Shanghai-1"
+        }
+      ]
+    },
+    {
+      "@id": "data/inflammation-04.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "data/inflammation-01.csv",
+      "@type": "File",
+      "contentLocation": [
+        {
+          "@id": "#Manchester-1"
+        }
+      ],
+      "temporalCoverage": [
+        "2025/10/29-2025/10/30"
+      ]
+    },
+    {
+      "@id": "data/inflammation-09.csv",
+      "@type": "File",
+      "contentLocation": [
+        {
+          "@id": "#Xiamen-1"
+        }
+      ]
+    },
+    {
+      "@id": "data/inflammation-07.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "data/inflammation-08.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "data/inflammation-11.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "data/python-novice-inflammation-data.zip",
+      "@type": "File"
+    },
+    {
+      "@id": "data/inflammation-12.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "data/small-03.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "data/inflammation-10.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "data/inflammation-05.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "data/small-01.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "data/small-02.csv",
+      "@type": "File"
+    },
+    {
+      "@id": "inflammation/models.py",
+      "@type": "File"
+    },
+    {
+      "@id": "inflammation/views.py",
+      "@type": "File"
+    },
+    {
+      "@id": "inflammation/__init__.py",
+      "@type": "File"
+    },
+    {
+      "@id": "tests/test_models.py",
+      "@type": "File"
+    },
+    {
+      "@id": "tests/test_patient.py",
+      "@type": "File"
+    },
+    {
+      "@id": "inflammation-analysis.py",
+      "@type": "File"
+    },
+    {
+      "@id": "pyproject.toml",
+      "@type": "File"
+    },
+    {
+      "@id": "LICENCE.md",
+      "@type": "File"
+    },
+    {
+      "@id": "README.md",
+      "@type": "File"
+    },
+    {
+      "@id": "ro-crate-preview.html",
+      "@type": "File"
+    },
+    {
+      "@id": "Untitled.ipynb",
+      "@type": "File",
+      "author": [
+        {
+          "@id": "#Chloe-1"
+        }
+      ],
+      "description": [
+        "Chloe's first test as author."
+      ]
+    },
+    {
+      "@id": "#Chloe-1",
+      "@type": "Person",
+      "name": [
+        "Chloe"
+      ]
+    },
+    {
+      "@id": "#Shanghai-1",
+      "@type": "Place",
+      "name": [
+        "Shanghai"
+      ]
+    },
+    {
+      "@id": "#Xiamen-1",
+      "@type": "Place",
+      "name": [
+        "Xiamen"
+      ]
+    },
+    {
+      "@id": "#Manchester-1",
+      "@type": "Place",
+      "name": [
+        "Manchester"
+      ],
+      "geo": []
     }
   ]
 }
